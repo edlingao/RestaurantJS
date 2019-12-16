@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right bottom, from(#2D132C), to(#801336));
+  background: linear-gradient(to bottom right, #2D132C, #801336);
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #EE4540;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.menu button {
+  position: absolute;
+  font-size: 36px;
+  border: 0;
+  background: none;
+  color: white;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu button:hover {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  background: #C72C41;
+  padding: 10px 20px;
+  border-radius: 10vh;
+}
+
+.menu .menu-button1 {
+  top: 40px;
+  left: -5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu .menu-button2 {
+  top: 40px;
+  right: -5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu .menu-button3 {
+  bottom: 30px;
+  left: 33px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.menu .menu-button1:hover {
+  left: -50px;
+}
+
+.menu .menu-button2:hover {
+  right: -50px;
+}
+
+.menu .menu-button3:hover {
+  left: 10px;
+  bottom: 0px;
+}
+/*# sourceMappingURL=main.css.map */

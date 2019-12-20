@@ -2,7 +2,7 @@
 
 > Restaurant menu page created entirely from JS code.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./docs/SS.gif)
 
 Additional description about the project and its features.
 

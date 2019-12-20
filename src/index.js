@@ -1,31 +1,43 @@
+import { foodMenu } from "./food";
+import { contact } from "./contact";
+import { home } from "./home";
+import { menu } from "./menu";
+const pagesContainer = page => {
+  let redBox = document.createElement("div");
+  let logo = document.createElement("div");
 
-const menu = ()=>{
-    let conatiner = document.createElement('div');
-    let home = document.createElement('button');
-    let menu = document.createElement('button');
-    let contact = document.createElement('button');
-    conatiner.classList.add('menu');
-    home.classList.add('menu-button1');
-    menu.classList.add('menu-button2');
-    contact.classList.add('menu-button3');
-    home.innerHTML = 'Home';
-    menu.innerText = 'Menu';
-    contact.innerText = 'Contact';
+  logo.classList.add("logo");
 
-    
-    conatiner.appendChild(home);
-    conatiner.appendChild(menu);
-    conatiner.appendChild(contact);
-
-    return conatiner;
-
-}
-
-
-function component() {
-    const element = menu();
-
-    return element;
-}
-
-document.body.appendChild(component());
+  redBox.classList.add("container");
+  redBox.appendChild(logo);
+  redBox.appendChild(page);
+  return redBox;
+};
+const removePage = container => {
+  container.removeChild(container.lastChild);
+};
+const changePage = (container, page) => {
+  page.classList.add("fade-in");
+  container.appendChild(page);
+};
+const main = () => {
+  document.body.appendChild(menu());
+  const container = pagesContainer(home());
+  const homeButton = document.querySelector("#home");
+  const menuButton = document.querySelector("#menu");
+  const contacButton = document.querySelector("#contact");
+  document.body.appendChild(container);
+  homeButton.addEventListener("click", () => {
+    removePage(container);
+    changePage(container, home());
+  });
+  menuButton.addEventListener("click", () => {
+    removePage(container);
+    changePage(container, foodMenu());
+  });
+  contacButton.addEventListener("click", () => {
+    removePage(container);
+    changePage(container, contact());
+  });
+};
+main();

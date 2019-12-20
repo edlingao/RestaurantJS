@@ -31,8 +31,8 @@ body {
   border: 0;
   background: none;
   color: white;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
   cursor: pointer;
   outline: none;
 }
@@ -113,6 +113,75 @@ body {
   font-size: 20px;
   color: white;
   border-radius: 3vh;
+}
+
+.container .contact-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 45px;
+  color: white;
+}
+
+.container .contact-container .contact {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 40px;
+}
+
+.container .contact-container .location, .container .contact-container .contact {
+  position: relative;
+  background: #801336;
+  width: 700px;
+  padding: 5px 35px;
+  border-radius: 3vh;
+  text-align: center;
+  -webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container .contact-container .location h1, .container .contact-container .contact h1 {
+  font-size: 60px;
+}
+
+.container .contact-container .location p, .container .contact-container .contact p {
+  background: none;
+  width: auto;
+  height: auto;
+  font-size: 33px;
+}
+
+.container .contact-container .location i, .container .contact-container .contact i {
+  font-size: 64px;
+  color: #C72C41;
+  margin-right: 10px;
+  position: absolute;
+  left: 170px;
+  top: 5px;
+}
+
+.container .contact-container .location {
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.container .contact-container .location i {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
 }
 
 .container .food-container {

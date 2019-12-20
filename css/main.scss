@@ -32,10 +32,9 @@ body{
         border: 0;
         background: none;
         color: white;
-        transition: all .5s;
+        transition: all .2s;
         cursor: pointer;
         outline: none;
-        //box-shadow: 0 0 0 30px rgba($color: #000000, $alpha: 1);
         
     }
     button:hover{
@@ -110,6 +109,58 @@ body{
         font-size: 20px;
         color: white;
         border-radius: 3vh;
+    }
+    .contact-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 45px;
+        color: white;
+        .contact{
+            align-self: flex-end;
+            margin-top: 40px;
+        }
+        .location, .contact{
+            position: relative;
+            background: $carmin;
+            width: 700px;
+            padding: 5px 35px;
+            border-radius: 3vh;
+            text-align: center;
+            box-shadow: -10px 10px 20px rgba($color: #000000, $alpha: .50);
+            h1{
+                font-size: 60px;
+
+            }
+            p{
+                background: none;
+                width: auto;
+                height: auto;
+                font-size: 33px;
+            }
+            i{
+                font-size: 64px;
+                color: $red;
+                margin-right: 10px;
+                position: absolute;
+                left: 170px;
+                top: 5px;
+            }
+
+
+        }
+        .location{
+            box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: .50);
+            i{
+                transform: rotate(45deg);
+                top: 0;
+                
+            }
+            margin-bottom: 20px;
+        }
     }
     .food-container{
        

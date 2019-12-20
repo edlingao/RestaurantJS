@@ -139,6 +139,7 @@ const removePage = (container)=>{
     container.removeChild(container.lastChild);
 }
 const changePage = (container, page)=>{
+    page.classList.add('fade-in');
     container.appendChild(page);
 }
 
